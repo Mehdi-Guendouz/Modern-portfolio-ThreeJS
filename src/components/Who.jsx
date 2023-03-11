@@ -53,7 +53,7 @@ const Button = styled.button`
     background-color: #da4ea2;
     color: white;
     font-weight: 500;
-    width: 100px;
+    width: 120px;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -80,7 +80,7 @@ const Who = () => {
                         <Subtitle>What We Are</Subtitle>
                     </WhatWeDo>
                     <Desc>A Creative group of designers and developers with a passion for the arts.</Desc>
-                    <Button>Learn More</Button>
+                    <Button>See Our Works</Button>
                 </Right>
             </Container>
         </Section>
