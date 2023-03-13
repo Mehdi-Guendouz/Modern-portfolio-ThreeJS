@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import { Canvas } from '@react-three/fiber';
+import Cube from './Cube';
+import { OrbitControls } from '@react-three/drei';
 import styled from 'styled-components';
-import Navbar from './Navbar';
 
 const Section = styled.div`
   height: 100vh;
@@ -72,6 +74,12 @@ const Who = () => {
         <Section>
             <Container>
                 <Left>
+                    <Canvas camera={{fov: 20 , position:[5,5,5]}}>
+                        <OrbitControls enableZoom={false} autoRotate />
+                        <ambientLight intensity={1} />
+                        <directionalLight position={[1,2,3]} />
+                        <Cube/>
+                    </Canvas>
                 </Left>
                 <Right>
                     <Title>Think Outside the Square Space</Title>
