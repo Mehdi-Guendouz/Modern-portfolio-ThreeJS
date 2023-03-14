@@ -11,6 +11,9 @@ const Section = styled.div`
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  @media only screen and (max-width: 768px) {
+    height: 100vh;
+  }
 `
 
 const Container = styled.div`
@@ -19,6 +22,9 @@ const Container = styled.div`
   width: 1400px;
   display: flex;
   justify-content: space-between;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 `
 
 const Right = styled.div`
@@ -27,11 +33,19 @@ const Right = styled.div`
     flex-direction: column;
     gap: 20px;
     justify-content: center;
+    @media only screen and (max-width: 768px) {
+    align-items: center;
+    text-align: center;
+    padding: 0px 10px;
+  }
 `
 
 
 const Title = styled.h1`   
     font-size: 74px;
+    @media only screen and (max-width: 768px) {
+    font-size: 60px;
+  }
 `
 const WhatWeDo = styled.div`
     display: flex;
@@ -67,6 +81,9 @@ const Button = styled.button`
 const Left = styled.div`   
     flex: 1;
     position: relative;
+    @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `
 
 const Who = () => {
